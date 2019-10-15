@@ -8,6 +8,34 @@
       function pageLoadedHandler() {
         alert("I'm alive!");
       }
+
+      setTimeout(timerHandler, 5000);
+
+      function timerHandler() {
+        alert("Yeah I am Alive, what were you expecting?");
+      }
+
+      setTimeout(timerHandler, 3000);
+
+      function timerHandler() {
+        alert("You waiting for me to die?");
+      }
+
+      var tick = true;
+
+      function ticker() {
+        if (tick) {
+          console.log("Tick");
+          tick = false;
+        }
+        else {
+          console.log("Tock");
+          tick = true;
+        }
+      }
+
+      setInterval(ticker, 1000);
+
     </script>
   </head>
   <body>
